@@ -1,4 +1,29 @@
-# Result
+# Creating VPC using Terraform
+
+## Objective
+
+- Write a tf file to use with Terraform to create VPC Infrastructure
+
+## Prerequisites
+
+- [AWS Access Key and Secret Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+- [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started)
+
+## Usage
+
+- [Install Git](https://github.com/git-guides/install-git)
+- Clone the repo
+
+```
+git clone https://github.com/BetcyBabu/Terraform-VPC-sample.git
+cd Terraform-VPC-sample
+terraform init
+terraform apply
+```
+
+This creates a VPC with DNS-hostname enabled, Internet Gateway, Subnets 6 (3 public, 3 private), Elastic IP, NAT gateway, Route tables (Private 1, Public 1), and Subnet Association.
+
+## Result
 
 ```
 PS C:\Users\HP\Desktop\Terraform\EC2\terraform04> terraform apply   
